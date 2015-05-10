@@ -19,7 +19,7 @@ def first_word (text)
 end
 
 def titleize (text)
-	exclude = "the", "and", "over"
+	exclude = "the", "and", "over", "in", "of", "a", "an"
 	words = text.split(' ').map do  |s| 
 		if exclude.include?(s)
 			s
